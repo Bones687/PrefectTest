@@ -11,6 +11,8 @@ jobs:
       KEY: ${{ secrets.PREFECT_TENANT_API_KEY}}
     steps:
     - uses: actions/checkout@v2
+    - name: Upgrade pip
+      run: /usr/local/bin/python -m pip install --upgrade pip
     - uses: BSFishy/pip-action@v1
       with:
         requirements: requirements.txt
