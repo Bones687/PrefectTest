@@ -17,6 +17,6 @@ jobs:
       with:
         requirements: requirements.txt
     - name: Authenticate to Prefect dependencies
-      run: prefect cloud login -k $KEY
+      run: prefect cloud login -k $KEY --workspace ndaltonterakeetcom/temp
     - name: Register flow
-      run: prefect register -p my_prefect_script.py --project temp
+      run: prefect project register-flow my_prefect_script.py
