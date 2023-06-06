@@ -14,8 +14,8 @@ def parse_fact(response):
     return fact
 
 @flow
-def api_flow():
-    fact_json = call_api("https://catfact.ninja/fact")
+def api_flow(url):
+    fact_json = call_api(url)
     fact_text = parse_fact(fact_json)
     return fact_text
 
