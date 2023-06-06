@@ -42,7 +42,7 @@ jobs:
 
       - name: Build and apply deployment
         run: |
-          prefect deployment build ./my_prefect_sript.py:api_flow \
+          prefect deployment build ./my_prefect_script.py:api_flow \
             --name "My API Flow" \
             -sb github/PrefectTest \
             -t github \
