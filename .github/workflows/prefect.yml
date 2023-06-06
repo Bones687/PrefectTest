@@ -47,5 +47,5 @@ jobs:
             -sb github/PrefectTest \
             -t github \
             -q githubwq \
-            -v #GITHUB_SHA \
+            -v $GITHUB_SHA \
             --apply
