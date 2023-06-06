@@ -44,7 +44,7 @@ jobs:
         run: |
           prefect deployment build ./my_prefect_script.py:api_flow \
             --name "My API Flow" \
-            -sb github/PrefectTest \
+            -sb github/test \
             -t github \
             -q githubwq \
             -v $GITHUB_SHA \
